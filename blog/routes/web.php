@@ -15,9 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+/*
 Route::get('/delavec', function () {
     return view('delavec');
 });
+*/
+Route::resource('delavec', 'DelavecController');
 
 Route::get('/kupec', function () {
     return view('kupec');
