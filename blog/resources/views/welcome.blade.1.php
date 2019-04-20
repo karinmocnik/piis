@@ -8,46 +8,33 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>PIIS</title>
+    <title>Hello, world!</title>
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="/">PIIS</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-        <li class="nav-item osnovni-podatki">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Osnovni podatki
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/delavec">tabela Delavec</a>
-            <a class="dropdown-item" href="/kupec">tabela Kupec</a>
-            <a class="dropdown-item" href="/operacija">tabela Operacija</a>
-            <a class="dropdown-item" href="/izdelek">tabela Izdelek</a>
-            <a class="dropdown-item" href="/izdelek+opis">master/detail forma: tabeli izdelek + opis_izdelka</a>
-             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="/izdelek+struktura">master/detail forma: tabeli izdelek + struktura</a>
-            <a class="dropdown-item" href="/izdelek+operacija">master/detail forma: tabeli izdelek + izdelek_operacije</a>
-            </div>
-        </li>
-         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Obračun dela
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/delovni-nalog">poročilo in vnosni obrazec: delovni_nalog</a>
-            <a class="dropdown-item" href="/vrstica-obracun">poročilo in vnosni obrazec: vrstica_obracuna</a>
-            <a class="dropdown-item" href="/izpolnjevanje-norme">poročilo: izpolnjevanje norme v obdobju</a>
-            </div>
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/kalkulacije">Kalkulacije</a>
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+            </div>
         </li>
         <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -58,19 +45,9 @@
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
     </div>
-</nav>
+    </nav>
 
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Pozdravljeni v poskuni aplikaciji PIIS!</h1>
-    <p class="lead">Ta model še ni za uporabo.</p>
-  </div>
-  <p class="lead">Spodaj se vidi koliko je model že narejen. Trenutno smo v začetni fazi.</p>
-</div>
-
-<div class="progress">
-     <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
+    <h1>Hello, world!</h1>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
