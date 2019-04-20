@@ -16,28 +16,12 @@
 <form method="POST" action="{{url('kupec')}}">
     @csrf
     <div class="form-group">
-        <label for="PRIIMEK">Priimek</label>
-        <input type="text" class="form-control" id="PRIIMEK" name="PRIIMEK" placeholder="Priimek">
+        <label for="NAZIV">Naziv</label>
+        <input type="text" class="form-control" id="NAZIV" name="NAZIV" placeholder="Naziv">
     </div>
     <div class="form-group">
-        <label for="IME">Ime</label>
-        <input type="text" class="form-control" id="IME" name="IME" placeholder="Ime">
-    </div>
-    <div class="form-group">
-        <label for="VODJA_ID">Vodja</label>
-        <select class="form-control" id="VODJA_ID" name="VODJA_ID">
-            @foreach($delavci as $delavec)
-            <option value="{{$delavec['DELAVEC_ID']}}">{{$delavec['IME']}} {{$delavec['PRIIMEK']}}</option>
-            @endforeach
-        </select>
-    </div>
-    <div class="form-group">
-        <label for="UPORABNISKO_IME">Uporabniško ime</label>
-        <input type="text" class="form-control" id="UPORABNISKO_IME" name="UPORABNISKO_IME" placeholder="uporabnisko_ime">
-    </div>
-    <div class="form-group">
-        <label for="GESLO">Geslo</label>
-        <input type="password" class="form-control" id="GESLO" name="GESLO" placeholder="">
+        <label for="DDV_ID">DDV</label>
+        <input type="text" class="form-control" id="DDV_ID" name="DDV_ID" placeholder="DDV">
     </div>
 
     <button type="submit" class="btn btn-primary">Dodaj</a>

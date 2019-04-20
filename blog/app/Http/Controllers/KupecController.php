@@ -39,12 +39,9 @@ class KupecController extends Controller
     {
         $kupecid = rand(0, 100000000);
         // tole je workaround, ker DELAVEC_ID ni nastavljen na npr. AUTO_INCREMENT
-        $delavec = new Delavec([
-            'GESLO' => $request->get('GESLO'),
-            'VODJA_ID' => $request->get('VODJA_ID'),
-            'PRIIMEK' => $request->get('PRIIMEK'),
-            'IME' => $request->get('IME'),
-            'UPORABNISKO_IME' => $request->get('UPORABNISKO_IME'),
+        $kupec = new Kupec([
+            'DDV_ID' => $request->get('DDV_ID'),
+            'NAZIV' => $request->get('NAZIV'),
             'kupec_ID' => $kupecid
         ]);
         $kupec->save();

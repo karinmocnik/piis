@@ -22,9 +22,7 @@ Route::get('/delavec', function () {
 */
 Route::resource('delavec', 'DelavecController');
 
-Route::get('/kupec', function () {
-    return view('kupec');
-});
+Route::resource('kupec', 'KupecController');
 
 Route::get('/operacija', function () {
     return view('operacija');
