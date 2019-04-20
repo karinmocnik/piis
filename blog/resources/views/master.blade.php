@@ -20,19 +20,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-        <li class="nav-item osnovni-podatki">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class="nav-item dropdown osnovni-podatki">
+            <a class="nav-link dropdown-toggle" href="#" id="mainNavDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Osnovni podatki
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/delavec">tabela Delavec</a>
-            <a class="dropdown-item" href="/kupec">tabela Kupec</a>
-            <a class="dropdown-item" href="/operacija">tabela Operacija</a>
-            <a class="dropdown-item" href="/izdelek">tabela Izdelek</a>
-            <a class="dropdown-item" href="/izdelek+opis">master/detail forma: tabeli izdelek + opis_izdelka</a>
-             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="/izdelek+struktura">master/detail forma: tabeli izdelek + struktura</a>
-            <a class="dropdown-item" href="/izdelek+operacija">master/detail forma: tabeli izdelek + izdelek_operacije</a>
+            <div class="dropdown-menu" aria-labelledby="mainNavDropdown">
+                <a class="dropdown-item" href="/delavec">tabela Delavec</a>
+                <a class="dropdown-item" href="/kupec">tabela Kupec</a>
+                <a class="dropdown-item" href="/operacija">tabela Operacija</a>
+                <a class="dropdown-item" href="/izdelek">tabela Izdelek</a>
+                <a class="dropdown-item" href="/izdelek+opis">master/detail forma: tabeli izdelek + opis_izdelka</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/izdelek+struktura">master/detail forma: tabeli izdelek + struktura</a>
+                <a class="dropdown-item" href="/izdelek+operacija">master/detail forma: tabeli izdelek + izdelek_operacije</a>
             </div>
         </li>
          <li class="nav-item dropdown">
