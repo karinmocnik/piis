@@ -48,8 +48,8 @@
         <input type="text" class="form-control" id="ND" name="ND" placeholder="ND">
     </div>
     <div class="form-group">
-        <label for="DATUM_ZALOG">DATUM_ZALOG</label>
-        <input type="text" class="form-control" id="DATUM_ZALOG" name="DATUM_ZALOG" placeholder="DATUM_ZALOG">
+        <label for="DATUM_ZALOG">Datum Zalog</label>
+        <input type="text" class="form-control" id="DATUM_ZALOG" name="DATUM_ZALOG" placeholder="YYYY-MM-DD">
     </div>
     <div class="form-group">
         <label for="VGRAD">VGRAD</label>

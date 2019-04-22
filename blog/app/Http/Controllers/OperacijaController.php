@@ -41,7 +41,7 @@ class OperacijaController extends Controller
         // tole je workaround, ker DELAVEC_ID ni nastavljen na npr. AUTO_INCREMENT
         $operacija = new Operacija([
             'NAZIV_OPERACIJE' => $request->get('NAZIV_OPERACIJE'),
-            'MINUT_NA_KOS' => $request->get('MINUT_NA_KOS'),
+            'MINUT_ZA_KOS' => $request->get('MINUT_ZA_KOS'),
             'OPERACIJA_ID' => $operacijaid
         ]);
         $operacija->save();
