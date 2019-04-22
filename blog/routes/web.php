@@ -26,10 +26,8 @@ Route::resource('kupec', 'KupecController');
 
 Route::resource('operacija', 'OperacijaController');
 
+Route::resource('izdelek', 'IzdelekController');
 
-Route::get('/izdelek', function () {
-    return view('izdelek');
-});
 
 Route::get('/izdelek+opis', function () {
     return view('izdelek+opis');
