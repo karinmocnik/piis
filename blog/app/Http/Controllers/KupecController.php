@@ -37,12 +37,12 @@ class KupecController extends Controller
      */
     public function store(Request $request)
     {
-        $kupecid = rand(0, 100000000);
+        $kupecid = rand(0, 100000);
         // tole je workaround, ker DELAVEC_ID ni nastavljen na npr. AUTO_INCREMENT
         $kupec = new Kupec([
             'DDV_ID' => $request->get('DDV_ID'),
             'NAZIV' => $request->get('NAZIV'),
-            'kupec_ID' => $kupecid
+            'KUPEC_ID' => $kupecid
         ]);
         $kupec->save();
         return redirect()->route('kupec.create')->with('success', 'Data Added');

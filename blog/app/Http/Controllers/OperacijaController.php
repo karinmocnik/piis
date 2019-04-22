@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Delavec;
+use App\Operacija;
 
-class DelavecController extends Controller
+class OperacijaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class DelavecController extends Controller
      */
     public function index()
     {
-        $delavci = Delavec::all()->toArray();
-        return view('delavec.index', compact('delavci'));
+        $operacije = Operacija::all()->toArray();
+        return view('operacija.index', compact('operacije'));
     }
 
     /**
@@ -25,8 +25,8 @@ class DelavecController extends Controller
      */
     public function create()
     {
-        $delavci = Delavec::all()->toArray();
-        return view('delavec.create', compact('delavci'));
+        $operacije = Operacija::all()->toArray();
+        return view('operacija.create', compact('operacije'));
     }
 
     /**
@@ -37,18 +37,15 @@ class DelavecController extends Controller
      */
     public function store(Request $request)
     {
-        $delavecid = rand(0, 100000);
+        $operacijaid = rand(0, 100000);
         // tole je workaround, ker DELAVEC_ID ni nastavljen na npr. AUTO_INCREMENT
-        $delavec = new Delavec([
-            'GESLO' => $request->get('GESLO'),
-            'VODJA_ID' => $request->get('VODJA_ID'),
-            'PRIIMEK' => $request->get('PRIIMEK'),
-            'IME' => $request->get('IME'),
-            'UPORABNISKO_IME' => $request->get('UPORABNISKO_IME'),
-            'DELAVEC_ID' => $delavecid
+        $operacija = new Operacija([
+            'NAZIV_OPERACIJE' => $request->get('NAZIV_OPERACIJE'),
+            'MINUT_NA_KOS' => $request->get('MINUT_NA_KOS'),
+            'OPERACIJA_ID' => $operacijaid
         ]);
-        $delavec->save();
-        return redirect()->route('delavec.create')->with('success', 'Data Added');
+        $operacija->save();
+        return redirect()->route('operacija.create')->with('success', 'Data Added');
     }
 
     /**

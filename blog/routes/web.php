@@ -24,9 +24,8 @@ Route::resource('delavec', 'DelavecController');
 
 Route::resource('kupec', 'KupecController');
 
-Route::get('/operacija', function () {
-    return view('operacija');
-});
+Route::resource('operacija', 'OperacijaController');
+
 
 Route::get('/izdelek', function () {
     return view('izdelek');
