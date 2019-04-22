@@ -41,9 +41,7 @@ Route::get('/izdelek+struktura', function () {
     return view('izdelek+struktura');
 });
 
-Route::get('/delovni-nalog', function () {
-    return view('delovni-nalog');
-});
+Route::resource('delovniNalog', 'DelovniNalogController');
 
 Route::get('/vrstica-obracun', function () {
     return view('vrstica-obracun');

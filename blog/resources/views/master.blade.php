@@ -40,7 +40,7 @@
                 Obračun dela
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/delovni-nalog">poročilo in vnosni obrazec: delovni_nalog</a>
+                <a class="dropdown-item" href="/delovniNalog">poročilo in vnosni obrazec: delovni_nalog</a>
                 <a class="dropdown-item" href="/vrstica-obracun">poročilo in vnosni obrazec: vrstica_obracuna</a>
                 <a class="dropdown-item" href="/izpolnjevanje-norme">poročilo: izpolnjevanje norme v obdobju</a>
                 </div>
@@ -49,9 +49,6 @@
                 <a class="nav-link" href="/kalkulacije">Kalkulacije</a>
             </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
     </div>
     </nav>
