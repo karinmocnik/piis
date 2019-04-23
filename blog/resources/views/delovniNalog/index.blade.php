@@ -17,14 +17,14 @@
                 </tr>
             </thead>
             <tbody>
-            @foreach($delovninalogi as $delovninalog)
+            @foreach($delovni_nalogi as $delovni_nalog)
                 <tr>
-                    <td>{{$delovninalog["DELOVNI_NALOG_ID"]}}</td>
-                    <td>{{$delovninalog["KUPEC_ID"]}}</td>
-                    <td>{{$delovninalog["OPERACIJA_ID"]}}</td>
-                    <td>{{$delovninalog["STEVILO_OPERACIJ"]}}</td>
-                    <td>{{$delovninalog["DATUM_LANSIRANJA"]}}</td>
-                    <td>{{$delovninalog["STATUS_DN"]}}</td>
+                    <td>{{$delovni_nalog["DELOVNI_NALOG_ID"]}}</td>
+                    <td>{{$delovni_nalog["KUPEC_ID"]}}</td>
+                    <td>{{$delovni_nalog["OPERACIJA_ID"]}}</td>
+                    <td>{{$delovni_nalog["STEVILO_OPERACIJ"]}}</td>
+                    <td>{{$delovni_nalog["DATUM_LANSIRANJA"]}}</td>
+                    <td>{{$delovni_nalog["STATUS_DN"]}}</td>
                 </tr>
             @endforeach
             </tbody>

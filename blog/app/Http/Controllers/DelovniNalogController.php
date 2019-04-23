@@ -15,7 +15,7 @@ class DelovniNalogController extends Controller
     public function index()
     {
         $delovniNalogi = DelovniNalog::all()->toArray();
-        return view('delovniNalog.index', compact('delovniNalogi'));
+        return view('delovniNalog.index', compact('delovni_nalogi'));
     }
 
     /**
@@ -26,7 +26,7 @@ class DelovniNalogController extends Controller
     public function create()
     {
         $delovniNalogi = DelovniNalog::all()->toArray();
-        return view('delovniNalog.create', compact('delovniNalogi'));
+        return view('delovniNalog.create', compact('delovni_nalogi'));
     }
 
     /**

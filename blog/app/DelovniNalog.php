@@ -15,6 +15,6 @@ class DelovniNalog extends Model
         'STATUS_DN',
     ];
 
-    protected $table = 'delovniNalog';
+    protected $table = 'delovni_nalog';
     public $timestamps = false;
 }
