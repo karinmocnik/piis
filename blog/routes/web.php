@@ -51,6 +51,4 @@ Route::get('/izpolnjevanje-norme', function () {
     return view('izpolnjevanje-norme');
 });
 
-Route::get('/kalkulacije', function () {
-    return view('kalkulacije');
-});
+Route::resource('kalkulacije', 'KalkulacijeController');
