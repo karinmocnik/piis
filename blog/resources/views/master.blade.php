@@ -29,7 +29,7 @@
                     <a class="dropdown-item" href="/kupec">tabela Kupec</a>
                     <a class="dropdown-item" href="/operacija">tabela Operacija</a>
                     <a class="dropdown-item" href="/izdelek">tabela Izdelek</a>
-                    <a class="dropdown-item" href="/izdelek+opis">master/detail forma: tabeli izdelek + opis_izdelka</a>
+                    <a class="dropdown-item" href="/izdelek_opis">master/detail forma: tabeli izdelek + opis_izdelka</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="/izdelek+struktura">master/detail forma: tabeli izdelek + struktura</a>
                     <a class="dropdown-item" href="/izdelek+operacija">master/detail forma: tabeli izdelek + izdelek_operacije</a>

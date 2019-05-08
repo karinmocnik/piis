@@ -28,10 +28,9 @@ Route::resource('operacija', 'OperacijaController');
 
 Route::resource('izdelek', 'IzdelekController');
 
+Route::resource('izdelek_opis', 'IzdelekOpisController');
 
-Route::get('/izdelek+opis', function () {
-    return view('izdelek+opis');
-});
+Route::resource('izpolnjevanje-norme', 'IzpolnjevanjeNormeController');
 
 Route::get('/izdelek+operacija', function () {
     return view('izdelek+operacija');
@@ -47,8 +46,5 @@ Route::get('/vrstica-obracun', function () {
     return view('vrstica-obracun');
 });
 
-Route::get('/izpolnjevanje-norme', function () {
-    return view('izpolnjevanje-norme');
-});
 
 Route::resource('kalkulacije', 'KalkulacijeController');

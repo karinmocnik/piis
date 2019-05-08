@@ -20,5 +20,6 @@ class Izdelek extends Model
     ];
 
     protected $table = 'izdelek';
+    // protected $primaryKey = 'IPS';
     public $timestamps = false;
 }

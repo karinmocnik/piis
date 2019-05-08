@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\DelovniNalog;
+use App\Izdelek;
+use App\IzdelekOpis;
 
-class DelovniNalogController extends Controller
+class IzdelekOpisController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +15,8 @@ class DelovniNalogController extends Controller
      */
     public function index()
     {
-        $delovni_nalogi = DelovniNalog::all()->toArray();
-        return view('delovniNalog.index', compact('delovni_nalogi'));
+        $izdelki = Izdelek::all()->toArray();
+        return view('izdelek_opis.index', compact('izdelki'));
     }
 
     /**
@@ -25,8 +26,8 @@ class DelovniNalogController extends Controller
      */
     public function create()
     {
-        $delovni_nalogi = DelovniNalog::all()->toArray();
-        return view('delovniNalog.create', compact('delovni_nalogi'));
+        $izdelki = Izdelek::all()->toArray();
+        return view('izdelek_opis.create', compact('izdelki'));
     }
 
     /**
@@ -37,18 +38,23 @@ class DelovniNalogController extends Controller
      */
     public function store(Request $request)
     {
-        $delavecid = rand(0, 100000);
+        $izdelekid = rand(0, 100000);
         // tole je workaround, ker DELAVEC_ID ni nastavljen na npr. AUTO_INCREMENT
-        $delavec = new Delavec([
-            'GESLO' => $request->get('GESLO'),
-            'VODJA_ID' => $request->get('VODJA_ID'),
-            'PRIIMEK' => $request->get('PRIIMEK'),
-            'IME' => $request->get('IME'),
-            'UPORABNISKO_IME' => $request->get('UPORABNISKO_IME'),
-            'DELAVEC_ID' => $delavecid
+        $izdelek = new Izdelek([
+            'IPS' => $request->get('IPS'),
+            'NAZIV' => $request->get('NAZIV'),
+            'VGRAD' => $request->get('VGRAD'),
+            'DATUM_ZALOG' => $request->get('DATUM_ZALOG'),
+            'PL_CENA' => $request->get('PL_CENA'),
+            'ENM' => $request->get('ENM'),
+            'OZN' => $request->get('OZN'),
+            'ZALOGA' => $request->get('ZALOGA'),
+            'LPE' => $request->get('LPE'),
+            'ND' => $request->get('ND'),
+
         ]);
-        $delavec->save();
-        return redirect()->route('delavec.create')->with('success', 'Data Added');
+        $izdelek->save();
+        return redirect()->route('izdelek.create')->with('success', 'Data Added');
     }
 
     /**
@@ -59,7 +65,10 @@ class DelovniNalogController extends Controller
      */
     public function show($id)
     {
-        //
+        $izdelek = Izdelek::where('IPS', $id)->firstOrFail();
+        $opis = IzdelekOpis::find($id);
+        //print_r($opis);
+        return view('izdelek_opis.show', compact('izdelek', 'opis'));
     }
 
     /**
