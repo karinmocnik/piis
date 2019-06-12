@@ -32,19 +32,12 @@ Route::resource('izdelek_opis', 'IzdelekOpisController');
 
 Route::resource('izpolnjevanje-norme', 'IzpolnjevanjeNormeController');
 
-Route::get('/izdelek+operacija', function () {
-    return view('izdelek+operacija');
-});
+Route::resource('izdelek_operacija', 'IzdelekOperacijaController');
 
-Route::get('/izdelek+struktura', function () {
-    return view('izdelek+struktura');
-});
+Route::resource('struktura', 'StrukturaController');
 
 Route::resource('delovniNalog', 'DelovniNalogController');
 
-Route::get('/vrstica-obracun', function () {
-    return view('vrstica-obracun');
-});
-
+Route::resource('vrstica-obracuna', 'VrsticaObracunaController');
 
 Route::resource('kalkulacije', 'KalkulacijeController');

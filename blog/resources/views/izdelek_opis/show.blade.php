@@ -5,17 +5,40 @@
         
         <table class="table table-hover">
             <tr>
-                <td><b>PL_CENA</b></td>
+                <td><b>ORIGINALNO IME</b></td>
+                <td>{{$opis['ORIGINALNO_IME']}}</td>
+            </tr> 
+            <tr>
+                <td><b>IPS</b></td>
+                <td>{{$izdelek['IPS']}}</td>
+            </tr>
+            <tr>
+                <td><b>PL cena</b></td>
                 <td>{{$izdelek['PL_CENA']}}</td>
             </tr>
             <tr>
-                <td><b>ENM</b></td>
-                <td>{{$izdelek['ENM']}}</td>
+                <td><b>Slika in video</b></td>
+                <td>{{$opis['Slika_video']}}</td>
             </tr>
-
             <tr>
-                <td><b>ORIGINALNO_IME</b></td>
-                <td>{{$opis['ORIGINALNO_IME']}}</td>
+                <td><b>Opis izdelka ID</b></td>
+                <td>{{$opis['Opis_izdelka_ID']}}</td>
+            </tr>
+            <tr>
+                <td><b>mime_type</b></td>
+                <td>{{$opis['mime_type']}}</td>
+            </tr>
+            <tr>
+                <td><b>datum kreiranja</b></td>
+                <td>{{$opis['datum_kreiranja']}}</td>
+            </tr>
+            <tr>
+                <td><b>datum zadnje spremembe</b></td>
+                <td>{{$opis['datum_zadnje_spremembe']}}</td>
+            </tr>
+            <tr>
+                <td><b>nabor zankov</b></td>
+                <td>{{$opis['nabor_znakov']}}</td>
             </tr>
         </table>
     </div>

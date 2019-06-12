@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Izdelek;
-use App\IzdelekOpis;
+use App\IzdelekOperacija;
 
-class IzdelekOpisController extends Controller
+class IzdelekOperacijaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,7 +16,7 @@ class IzdelekOpisController extends Controller
     public function index()
     {
         $izdelki = Izdelek::all()->toArray();
-        return view('izdelek_opis.index', compact('izdelki'));
+        return view('izdelek_operacija.index', compact('izdelki'));
     }
 
     /**
@@ -27,7 +27,7 @@ class IzdelekOpisController extends Controller
     public function create()
     {
         $izdelki = Izdelek::all()->toArray();
-        return view('izdelek_opis.create', compact('izdelki'));
+        return view('izdelek_operacija.create', compact('izdelki'));
     }
 
     /**
@@ -41,14 +41,16 @@ class IzdelekOpisController extends Controller
         $izdelekid = rand(0, 100000);
         // tole je workaround, ker DELAVEC_ID ni nastavljen na npr. AUTO_INCREMENT
         $izdelek = new Izdelek([
-            'Opis_izdelka_ID' => $request->get('Opis_izdelka_ID'),
             'IPS' => $request->get('IPS'),
-            'Slika_video' => $request->get('Slika_video'),
-            'originalno_ime' => $request->get('originalno_ime'),
-            'mime_type' => $request->get('mime_type'),
-            'datum_kreiranja' => $request->get('datum_kreiranja'),
-            'datum_zadnje_spremembe' => $request->get('datum_zadnje_spremembe'),
-            'nabor_znakov' => $request->get('nabor_znakov'),
+            'NAZIV' => $request->get('NAZIV'),
+            'VGRAD' => $request->get('VGRAD'),
+            'DATUM_ZALOG' => $request->get('DATUM_ZALOG'),
+            'PL_CENA' => $request->get('PL_CENA'),
+            'ENM' => $request->get('ENM'),
+            'OZN' => $request->get('OZN'),
+            'ZALOGA' => $request->get('ZALOGA'),
+            'LPE' => $request->get('LPE'),
+            'ND' => $request->get('ND'),
 
         ]);
         $izdelek->save();
@@ -64,9 +66,9 @@ class IzdelekOpisController extends Controller
     public function show($id)
     {
         $izdelek = Izdelek::where('IPS', $id)->firstOrFail();
-        $opis = IzdelekOpis::find($id);
-        //print_r($opis);
-        return view('izdelek_opis.show', compact('izdelek', 'opis'));
+        $opercija = IzdelekOperacija::find($id);
+        //print_r($operacija);
+        return view('izdelek_operacija.showI', compact('izdelek', 'operacija'));
     }
 
     /**
