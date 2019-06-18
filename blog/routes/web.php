@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return view('welcome');
 });
 
@@ -34,7 +34,7 @@ Route::resource('izpolnjevanje-norme', 'IzpolnjevanjeNormeController');
 
 Route::resource('izdelek_operacija', 'IzdelekOperacijaController');
 
-Route::resource('struktura', 'StrukturaController');
+Route::resource('izdelek_struktura', 'StrukturaController');
 
 Route::resource('delovniNalog', 'DelovniNalogController');
 

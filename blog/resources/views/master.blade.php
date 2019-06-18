@@ -31,8 +31,8 @@
                     <a class="dropdown-item" href="/izdelek">tabela Izdelek</a>
                     <a class="dropdown-item" href="/izdelek_opis">master/detail forma: tabeli izdelek + opis_izdelka</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="/izdelek+struktura">master/detail forma: tabeli izdelek + struktura</a>
-                    <a class="dropdown-item" href="/izdelek+operacija">master/detail forma: tabeli izdelek + izdelek_operacije</a>
+                    <a class="dropdown-item" href="/izdelek_struktura">master/detail forma: tabeli izdelek + struktura</a>
+                    <a class="dropdown-item" href="/izdelek_operacija">master/detail forma: tabeli izdelek + izdelek_operacije</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
@@ -41,7 +41,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="/delovniNalog">poročilo in vnosni obrazec: delovni_nalog</a>
-                <a class="dropdown-item" href="/vrstica-obracun">poročilo in vnosni obrazec: vrstica_obracuna</a>
+                <a class="dropdown-item" href="/vrstica-obracuna">poročilo in vnosni obrazec: vrstica_obracuna</a>
                 <a class="dropdown-item" href="/izpolnjevanje-norme">poročilo: izpolnjevanje norme v obdobju</a>
                 </div>
             </li>

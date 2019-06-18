@@ -25,27 +25,27 @@
     </div>
     <div class="form-group">
         <label for="PL_CENA">PL CENA</label>
-        <input type="text" class="form-control" id="PL_CENA" name="PL_CENA" placeholder="PL_CENA">
+        <input type="number" class="form-control" id="PL_CENA" name="PL_CENA" placeholder="PL_CENA">
     </div>
     <div class="form-group">
         <label for="ENM">ENM</label>
-        <input type="text" class="form-control" id="ENM" name="ENM" placeholder="ENM">
+        <input type="number" class="form-control" id="ENM" name="ENM" placeholder="ENM">
     </div>
     <div class="form-group">
         <label for="ZALOGA">Zaloga</label>
-        <input type="text" class="form-control" id="ZALOGA" name="ZALOGA" placeholder="ZALOGA">
+        <input type="number" class="form-control" id="ZALOGA" name="ZALOGA" placeholder="ZALOGA">
     </div>
     <div class="form-group">
         <label for="OZN">OZN</label>
-        <input type="text" class="form-control" id="OZN" name="OZN" placeholder="OZN">
+        <input type="number" class="form-control" id="OZN" name="OZN" placeholder="OZN">
     </div>
     <div class="form-group">
         <label for="LPE">LPE</label>
-        <input type="text" class="form-control" id="LPE" name="LPE" placeholder="LPE">
+        <input type="number" class="form-control" id="LPE" name="LPE" placeholder="LPE">
     </div>
     <div class="form-group">
         <label for="ND">ND</label>
-        <input type="text" class="form-control" id="ND" name="ND" placeholder="ND">
+        <input type="number" class="form-control" id="ND" name="ND" placeholder="ND">
     </div>
     <div class="form-group">
         <label for="DATUM_ZALOG">Datum Zalog</label>
@@ -53,7 +53,7 @@
     </div>
     <div class="form-group">
         <label for="VGRAD">VGRAD</label>
-        <input type="text" class="form-control" id="VGRAD" name="VGRAD" placeholder="VGRAD">
+        <input type="number" class="form-control" id="VGRAD" name="VGRAD" placeholder="VGRAD">
     </div>
 
 

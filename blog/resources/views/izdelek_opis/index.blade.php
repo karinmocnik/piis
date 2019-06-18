@@ -1,7 +1,7 @@
 @extends('master')
 
 @section('content')
-        <h1 style="margin-top: 20px; margin-bottom: 20px;">Pregled: Izdelki</h1>
+        <h1 style="margin-top: 20px; margin-bottom: 20px;">Pregled: Izdelki z opisom</h1>
         
         <a href="{{route('izdelek.create')}}" class="btn btn-success" style="float: right">Dodaj izdelek</a>
         <br><br>

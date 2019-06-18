@@ -14,14 +14,12 @@
                 </tr>
             </thead>
             <tbody>
-            @foreach($izdelki as $izdelek)
+            @foreach($strukture as $struktura)
                 <tr>
-                    <td>{{$izdelek["IPS"]}}</td>
-                    <td>{{$izdelek["NAZIV"]}}</td>
-                    <td>{{$izdelek["PL_CENA"]}}</td>
-                    <td>
-                        <a href="{{route('izdelek_opis.show', $izdelek['IPS'])}}">podrobnosti</a>
-                    </td>
+                    <td>{{$struktura["NADREJENI_DEL_ID"]}}</td>
+                    <td>{{$struktura["VGRAJENI_DEL_ID"]}}</td>
+                    <td>{{$struktura["KOLICINA"]}}</td>
+                   
                 </tr>
             @endforeach
             </tbody>

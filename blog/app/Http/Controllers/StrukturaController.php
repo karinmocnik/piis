@@ -15,8 +15,8 @@ class StrukturaController extends Controller
      */
     public function index()
     {
-        $izdelki = Izdelek::all()->toArray();
-        return view('struktura.index', compact('izdelki'));
+        $strukture = Struktura::all()->toArray();
+        return view('struktura.index', compact('strukture'));
     }
 
     /**
@@ -26,8 +26,8 @@ class StrukturaController extends Controller
      */
     public function create()
     {
-        $izdelki = Izdelek::all()->toArray();
-        return view('struktura.create', compact('izdelki'));
+        $strukture = Struktura::all()->toArray();
+        return view('struktura.create', compact('strukture'));
     }
 
     /**
@@ -40,7 +40,7 @@ class StrukturaController extends Controller
     {
         $izdelekid = rand(0, 100000);
         // tole je workaround, ker DELAVEC_ID ni nastavljen na npr. AUTO_INCREMENT
-        $izdelek = new Izdelek([
+           $izdelek = new Izdelek([
             'IPS' => $request->get('IPS'),
             'NAZIV' => $request->get('NAZIV'),
             'VGRAD' => $request->get('VGRAD'),
@@ -63,12 +63,12 @@ class StrukturaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+        public function show($id)
     {
         $izdelek = Izdelek::where('IPS', $id)->firstOrFail();
         $struktura = Struktura::find($id);
         //print_r($operacija);
-        return view('struktura.showI', compact('izdelek', 'struktura'));
+        return view('struktura.show', compact('izdelek', 'struktura'));
     }
 
     /**

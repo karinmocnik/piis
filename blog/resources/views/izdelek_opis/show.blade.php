@@ -18,7 +18,7 @@
             </tr>
             <tr>
                 <td><b>Slika in video</b></td>
-                <td>{{$opis['Slika_video']}}</td>
+                <td>{{$izdelek['Slika_video']}}</td>
             </tr>
             <tr>
                 <td><b>Opis izdelka ID</b></td>
@@ -30,7 +30,7 @@
             </tr>
             <tr>
                 <td><b>datum kreiranja</b></td>
-                <td>{{$opis['datum_kreiranja']}}</td>
+                <td>{{$izdelek['datum_kreiranja']}}</td>
             </tr>
             <tr>
                 <td><b>datum zadnje spremembe</b></td>

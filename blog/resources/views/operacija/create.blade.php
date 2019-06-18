@@ -26,16 +26,17 @@
     </div> 
     -->
     <div class="form-group">
+        <label for="MINUT_ZA_KOS">Minut za kos</label>
+        <input type="number" class="form-control" id="MINUT_ZA_KOS" name="MINUT_ZA_KOS" placeholder="Minut za kos">
+    </div>
+
+    <div class="form-group">
         <label for="OPOMBA1">Opomba 1</label>
         <input type="text" class="form-control" id="OPOMBA1" name="OPOMBA1" >
     </div>
     <div class="form-group">
         <label for="OPOMBA2">Opomba 2</label>
         <input type="text" class="form-control" id="OPOMBA2" name="OPOMBA2" >
-    </div>
-    <div class="form-group">
-        <label for="MINUT_ZA_KOS">Minut za kos</label>
-        <input type="number" class="form-control" id="MINUT_ZA_KOS" name="MINUT_ZA_KOS" placeholder="Minut za kos">
     </div>
 
     <button type="submit" class="btn btn-primary">Dodaj</a>
