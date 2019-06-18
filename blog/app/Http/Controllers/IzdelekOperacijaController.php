@@ -15,8 +15,8 @@ class IzdelekOperacijaController extends Controller
      */
     public function index()
     {
-        $izdelki = Izdelek::all()->toArray();
-        return view('izdelek_operacija.index', compact('izdelki'));
+        $operacije = IzdelekOperacija::all()->toArray();
+        return view('izdelek_operacija.index', compact('operacije'));
     }
 
     /**
@@ -26,8 +26,8 @@ class IzdelekOperacijaController extends Controller
      */
     public function create()
     {
-        $izdelki = Izdelek::all()->toArray();
-        return view('izdelek_operacija.create', compact('izdelki'));
+        $operacije = IzdelekOperacija::all()->toArray();
+        return view('izdelek_operacija.create', compact('operacije'));
     }
 
     /**
@@ -68,7 +68,7 @@ class IzdelekOperacijaController extends Controller
         $izdelek = Izdelek::where('IPS', $id)->firstOrFail();
         $opercija = IzdelekOperacija::find($id);
         //print_r($operacija);
-        return view('izdelek_operacija.showI', compact('izdelek', 'operacija'));
+        return view('izdelek_operacija.show', compact('izdelek', 'operacija'));
     }
 
     /**

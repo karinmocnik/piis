@@ -37,18 +37,19 @@ class DelovniNalogController extends Controller
      */
     public function store(Request $request)
     {
-        $delavecid = rand(0, 100000);
+        //$delovniNalogid = rand(0, 100000);
         // tole je workaround, ker DELAVEC_ID ni nastavljen na npr. AUTO_INCREMENT
-        $delavec = new Delavec([
-            'GESLO' => $request->get('GESLO'),
-            'VODJA_ID' => $request->get('VODJA_ID'),
-            'PRIIMEK' => $request->get('PRIIMEK'),
-            'IME' => $request->get('IME'),
-            'UPORABNISKO_IME' => $request->get('UPORABNISKO_IME'),
-            'DELAVEC_ID' => $delavecid
+        $delovniNalog = new DelovniNalog([
+            'KUPEC_ID' => $request->get('KUPEC_ID'),
+            'DELOVNI_NALOG_ID' => $request->get('DELOVNI_NALOG_ID'),
+            'OPERACIJA_ID' => $request->get('OPERACIJA_ID'),
+            'STEVILO_OPERACIJ' => $request->get('STEVILO_OPERACIJ'),
+            'DATUM_LANSIRANJA' => $request->get('DATUM_LANSIRANJA'),
+            'STATUS_DN' => $request->get('STATUS_DN'),
+            //'DELOVNI_NALOG_ID' => $delovniNalogcid
         ]);
-        $delavec->save();
-        return redirect()->route('delavec.create')->with('success', 'Data Added');
+        $delovni_nalogi->save();
+        return redirect()->route('delovniNalog.create')->with('success', 'Data Added');
     }
 
     /**

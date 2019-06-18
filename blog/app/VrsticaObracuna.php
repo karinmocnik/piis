@@ -7,11 +7,19 @@ use Illuminate\Support\Facades\DB;
 
 class VrsticaObracuna extends Model
 {
-    // 
-    static public function getNorm() {
-        $sql = DB::select("select DELAVEC_ID, PRIIMEK, IME, F_IZRACUN_NORME(DELAVEC_ID, '2015-11-01', '2015-11-30') AS NORMA FROM DELAVEC;"); 
-        $delavci = json_decode(json_encode($sql), true);
-        return $delavci;
-    }
- 
+    protected $fillable = [
+        'VRSTICA_OBRACUNA_ID',
+        'DATUM_REALIZACIJE',
+        'DATUM_VPISA',
+        'DELAVEC_ID',
+        'DELOVNI_NALOG_ID',
+        'STEVILO_OPERACIJ',
+        'MINUT_DELA',
+        'MINUT_NENORMIRANO',
+        'MINUT_ZASTOJ'
+    ];
+
+    protected $table = 'VrsticaObracuna';
+    protected $primaryKey = 'IPS';
+    public $timestamps = false;
 }

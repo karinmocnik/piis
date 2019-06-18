@@ -14,12 +14,11 @@
                 </tr>
             </thead>
             <tbody>
-            @foreach($izdelki as $izdelek)
-            <tr>
-                    <td>{{$izdelek["IPS"]}}</td>
-                   
-
-                   
+            @foreach($operacije as $operacija)
+                <tr>
+                    <td>{{$operacija["IZDELEK_ID"]}}</td>
+                    <td>{{$operacija["OPERACIJA_ID"]}}</td>
+                    <td>{{$operacija["ZAPOREDJE"]}}</td>
                 </tr>
             @endforeach
             </tbody>
