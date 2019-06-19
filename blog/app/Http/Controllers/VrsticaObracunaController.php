@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\VrsticaObracuna;
+use App\Vrstica_Obracuna;
 
 class VrsticaObracunaController extends Controller
 {
@@ -14,7 +14,7 @@ class VrsticaObracunaController extends Controller
      */
     public function index()
     {
-        $vrstice_obracunov = VrsticaObracuna::all()->toArray();
+        $vrstice_obracunov = vrstica_obracuna::all()->toArray();
         return view('vrsticaObracuna.index', compact('vrstice_obracunov'));
     }
 
@@ -25,7 +25,7 @@ class VrsticaObracunaController extends Controller
      */
     public function create()
     {
-        $vrstice_obracunov = VrsticaObracuna::all()->toArray();
+        $vrstice_obracunov = vrstica_obracuna::all()->toArray();
         return view('vrsticaObracuna.create', compact('vrstice_obracunov'));
     }
 
@@ -39,7 +39,7 @@ class VrsticaObracunaController extends Controller
     {
        // $izdelekid = rand(0, 100000);
         // tole je workaround, ker DELAVEC_ID ni nastavljen na npr. AUTO_INCREMENT
-           $vrstice_obracunov = new VrsticaObracuna([
+           $vrstice_obracunov = new vrstica_obracuna([
             'VRSTICA_OBRACUNA_ID' => $request->get('VRSTICA_OBRACUNA_ID'),
             'DATUM_REALIZACIJE' => $request->get('DATUM_REALIZACIJE'),
             'DATUM_VPISA' => $request->get('DATUM_VPISA'),

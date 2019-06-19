@@ -19,18 +19,18 @@
                 </tr>
             </thead>
             <tbody>
-            @foreach($obracuni as $obracun)
+            @foreach($vrstice_obracunov as $vrstica_obracuna)
                 <tr>
-                    <td>{{$obracun["VRSTICA_OBRACUNA_ID"]}}</td>
-                    <td>{{$obracun["DATUM_REALIZACIJE"]}}</td>
-                    <td>{{$obracun["DATUM_VPISA"]}}</td>
-                    <td>{{$obracun["DELAVEC_ID"]}}</td>
-                    <td>{{$obracun["OPERACIJA_ID"]}}</td>
-                    <td>{{$obracun["DELOVNI_NALOG_ID"]}}</td>
-                    <td>{{$obracun["STEVILO_OPERACIJ"]}}</td>
-                    <td>{{$obracun["MINUT_DELA"]}}</td>
-                    <td>{{$obracun["MINUT_NENORMIRANO"]}}</td>
-                    <td>{{$obracun["MINUT_ZASTOJ"]}}</td>
+                    <td>{{$vrstica_obracuna["VRSTICA_OBRACUNA_ID"]}}</td>
+                    <td>{{$vrstica_obracuna["DATUM_REALIZACIJE"]}}</td>
+                    <td>{{$vrstica_obracuna["DATUM_VPISA"]}}</td>
+                    <td>{{$vrstica_obracuna["DELAVEC_ID"]}}</td>
+                    <td>{{$vrstica_obracuna["OPERACIJA_ID"]}}</td>
+                    <td>{{$vrstica_obracuna["DELOVNI_NALOG_ID"]}}</td>
+                    <td>{{$vrstica_obracuna["STEVILO_OPERACIJ"]}}</td>
+                    <td>{{$vrstica_obracuna["MINUT_DELA"]}}</td>
+                    <td>{{$vrstica_obracuna["MINUT_NENORMIRANO"]}}</td>
+                    <td>{{$vrstica_obracuna["MINUT_ZASTOJ"]}}</td>
                 </tr>
             @endforeach
             </tbody>

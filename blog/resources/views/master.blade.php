@@ -49,6 +49,7 @@
                 <a class="nav-link" href="/kalkulacije">Kalkulacije</a>
             </li>
         </ul>
+        
         </form>
     </div>
     </nav>

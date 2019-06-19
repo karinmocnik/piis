@@ -3,12 +3,12 @@
 @section('content')
     <h1 style="margin-top: 20px; margin-bottom: 20px;">Pregled: Kalkulacije</h1>
     
-    <p> tukaj je potrebno poročilo na poizvedbi, ki vsebuje funkcijo izracuni.kalkulacija_oklep(p1,p2,p3)
-7 </p>
+    <p> tukaj je potrebno poročilo na poizvedbi, ki vsebuje funkcijo izracuni.kalkulacija_oklep(p1,p2,p3) </p>
 
         <form method="POST" action="{{url('kalkulacije')}}">
             @csrf
-            
+            <p>Ta stran ne dela! Narejena je kot primer, funkcija (ki bi morala biti v njej) pa ne dela. 
+            </p>
             <div class="form-group">
                 <label for="IPS">Izdelek</label>
                 <select class="form-control" id="IPS" name="IPS">

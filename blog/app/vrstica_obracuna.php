@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 
-class VrsticaObracuna extends Model
+class vrstica_obracuna extends Model
 {
     protected $fillable = [
         'VRSTICA_OBRACUNA_ID',
@@ -19,7 +19,7 @@ class VrsticaObracuna extends Model
         'MINUT_ZASTOJ'
     ];
 
-    protected $table = 'VrsticaObracuna';
-    protected $primaryKey = 'IPS';
+    protected $table = 'vrstica_obracuna';
+    protected $primaryKey = 'VRSTICA_OBRACUNA_ID';
     public $timestamps = false;
 }
